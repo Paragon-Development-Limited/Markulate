@@ -439,22 +439,22 @@
     <div class="hero-inner">
       <div class="hero-eyebrow">
         <span class="dot"></span>
-        Now accepting early access sign-ups
+        MVP in development — seeking early teacher collaborators
       </div>
       <h1>You became a teacher<br>to <em>teach</em>, not to mark.</h1>
       <p class="hero-sub">
         Markulate learns from your rubric and applies your criteria consistently — subject to your review and approval at every step. Fast for you. Transparent for students. Defensible for your school.
       </p>
       <div class="waitlist-block" id="waitlist">
-        <p class="waitlist-label">Get early access — free during beta</p>
+        <p class="waitlist-label">Become an early teacher collaborator — private beta, free to join</p>
         <div class="form-row" id="hero-form-row">
           <input type="email" id="hero-email" placeholder="your@email.com" aria-label="Email address" />
-          <button onclick="submitWaitlist('hero')">Join waitlist →</button>
+          <button onclick="submitWaitlist('hero')">Apply to collaborate →</button>
         </div>
         <div class="form-success" id="hero-success">
-          ✓ You're on the list. We'll be in touch before public launch.
+          ✓ Thank you — we will be in touch before private beta opens.
         </div>
-        <p class="social-proof"><strong>Join educators</strong> who are reclaiming their evenings with Markulate.</p>
+        <p class="social-proof">We are building this <strong>with teachers</strong>, not just for them.</p>
       </div>
     </div>
   </section>
@@ -513,6 +513,93 @@
           <div style="font-size:0.9rem;color:var(--ink-2);line-height:1.65;">Markulate provides a first-pass marking assistant — not a replacement for your judgment. Every suggested mark comes with a clear rationale drawn from your rubric. You review, override, and approve every score before it becomes final. The AI assists. You decide.</div>
         </div>
       </div>
+
+      <!-- Illustrative workflow diagram -->
+      <div style="margin-top:3rem;">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.25rem;">
+          <div style="font-size:0.95rem;font-weight:500;">Illustrative beta workflow</div>
+          <span style="font-size:0.75rem;font-weight:500;padding:3px 10px;border-radius:100px;background:var(--accent-light);color:var(--accent);border:1px solid rgba(45,90,61,0.2);">For illustration only — interface in development</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:0;border:1px solid var(--border);border-radius:14px;overflow:hidden;">
+          <div style="padding:1.25rem 1rem;background:#fff;text-align:center;border-right:1px solid var(--border);">
+            <div style="font-size:1.5rem;margin-bottom:0.5rem;">📄</div>
+            <div style="font-size:0.8rem;font-weight:500;margin-bottom:0.25rem;">Upload rubric</div>
+            <div style="font-size:0.75rem;color:var(--ink-3);">PDF or paste</div>
+          </div>
+          <div style="padding:1.25rem 1rem;background:#fff;text-align:center;border-right:1px solid var(--border);position:relative;">
+            <div style="position:absolute;left:-10px;top:50%;transform:translateY(-50%);color:var(--ink-3);font-size:0.9rem;">→</div>
+            <div style="font-size:1.5rem;margin-bottom:0.5rem;">📝</div>
+            <div style="font-size:0.8rem;font-weight:500;margin-bottom:0.25rem;">Submit scripts</div>
+            <div style="font-size:0.75rem;color:var(--ink-3);">Typed or scanned</div>
+          </div>
+          <div style="padding:1.25rem 1rem;background:#fff;text-align:center;border-right:1px solid var(--border);position:relative;">
+            <div style="position:absolute;left:-10px;top:50%;transform:translateY(-50%);color:var(--ink-3);font-size:0.9rem;">→</div>
+            <div style="font-size:1.5rem;margin-bottom:0.5rem;">🤖</div>
+            <div style="font-size:0.8rem;font-weight:500;margin-bottom:0.25rem;">AI suggestion</div>
+            <div style="font-size:0.75rem;color:var(--ink-3);">Mark + rationale</div>
+          </div>
+          <div style="padding:1.25rem 1rem;background:#fff;text-align:center;border-right:1px solid var(--border);position:relative;">
+            <div style="position:absolute;left:-10px;top:50%;transform:translateY(-50%);color:var(--ink-3);font-size:0.9rem;">→</div>
+            <div style="font-size:1.5rem;margin-bottom:0.5rem;">✅</div>
+            <div style="font-size:0.8rem;font-weight:500;margin-bottom:0.25rem;">Teacher reviews</div>
+            <div style="font-size:0.75rem;color:var(--ink-3);">Override anything</div>
+          </div>
+          <div style="padding:1.25rem 1rem;background:var(--accent-light);text-align:center;position:relative;">
+            <div style="position:absolute;left:-10px;top:50%;transform:translateY(-50%);color:var(--ink-3);font-size:0.9rem;">→</div>
+            <div style="font-size:1.5rem;margin-bottom:0.5rem;">📊</div>
+            <div style="font-size:0.8rem;font-weight:500;margin-bottom:0.25rem;color:var(--accent);">Export record</div>
+            <div style="font-size:0.75rem;color:var(--accent);opacity:0.7;">CSV + audit trail</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILT WITH TEACHERS SECTION -->
+  <section style="background:var(--ink);color:#fff;">
+    <div class="max-w">
+      <p class="section-label" style="color:var(--accent-mid);">Where we are now</p>
+      <h2 style="color:#fff;">Built with teachers<br>before launch</h2>
+      <p style="color:rgba(255,255,255,0.6);font-size:1.05rem;font-weight:300;max-width:560px;line-height:1.65;margin-bottom:3rem;">Markulate is currently in MVP development. We are not launching to the public until we have tested the workflow with real teachers on real scripts.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-bottom:3rem;">
+        <div style="border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.5rem;background:rgba(255,255,255,0.04);">
+          <div style="font-size:1.3rem;margin-bottom:0.6rem;">🔨</div>
+          <div style="font-size:0.9rem;font-weight:500;margin-bottom:0.4rem;">What we are building</div>
+          <div style="font-size:0.85rem;color:rgba(255,255,255,0.5);line-height:1.6;">Rubric-based marking for written assignments, teacher review workflows, explainable marking suggestions, and secure script handling.</div>
+        </div>
+        <div style="border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.5rem;background:rgba(255,255,255,0.04);">
+          <div style="font-size:1.3rem;margin-bottom:0.6rem;">🧪</div>
+          <div style="font-size:0.9rem;font-weight:500;margin-bottom:0.4rem;">What private beta will test</div>
+          <div style="font-size:0.85rem;color:rgba(255,255,255,0.5);line-height:1.6;">Rubric alignment accuracy, time saved per script, teacher override patterns, feedback format quality, and export usability.</div>
+        </div>
+        <div style="border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.5rem;background:rgba(255,255,255,0.04);">
+          <div style="font-size:1.3rem;margin-bottom:0.6rem;">🤝</div>
+          <div style="font-size:0.9rem;font-weight:500;margin-bottom:0.4rem;">What we are seeking</div>
+          <div style="font-size:0.85rem;color:rgba(255,255,255,0.5);line-height:1.6;">Early teacher collaborators and small departmental pilots willing to test workflows and shape the product before wider release.</div>
+        </div>
+        <div style="border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.5rem;background:rgba(255,255,255,0.04);">
+          <div style="font-size:1.3rem;margin-bottom:0.6rem;">📅</div>
+          <div style="font-size:0.9rem;font-weight:500;margin-bottom:0.4rem;">Current stage</div>
+          <div style="font-size:0.85rem;color:rgba(255,255,255,0.5);line-height:1.6;">Building the private beta with teachers and academic reviewers. No public release date set — quality and safety come first.</div>
+        </div>
+      </div>
+
+      <!-- Beta collaborator intake form placeholder -->
+      <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.15);border-radius:16px;padding:2rem 2.25rem;">
+        <div style="font-size:1rem;font-weight:500;margin-bottom:0.4rem;">Apply to join the private beta</div>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,0.5);margin-bottom:1.5rem;">We are looking for 20–50 teachers and academic markers to test Markulate before launch. Tell us about your marking context and we will be in touch.</p>
+        <!-- REPLACE THIS with your Tally embed code once form is built -->
+        <div style="background:rgba(255,255,255,0.04);border:1px dashed rgba(255,255,255,0.2);border-radius:10px;padding:1.5rem;text-align:center;">
+          <div style="font-size:0.85rem;color:rgba(255,255,255,0.4);margin-bottom:0.75rem;">[ Tally form embed goes here ]</div>
+          <div style="font-size:0.75rem;color:rgba(255,255,255,0.25);">Form will capture: subject, grade level, institution type, scripts per month, rubric use, beta willingness</div>
+        </div>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.3);margin-top:1rem;text-align:center;">Or email us directly at <a href="mailto:hello@markulate.com" style="color:rgba(255,255,255,0.5);">hello@markulate.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div style="display:none"><!-- section closing tag moved -->
     </div>
   </section>
 
@@ -619,14 +706,14 @@
   <!-- FOOTER CTA -->
   <section class="footer-cta">
     <div class="max-w">
-      <h2>Be first in the classroom.</h2>
-      <p>Fast for you. Transparent for students. Defensible for your school.<br>Join the waitlist for free beta access — no credit card, no commitment.</p>
+      <h2>Be part of building this.</h2>
+      <p>We are seeking 20–50 early teacher collaborators for our private beta.<br>No credit card. No commitment. Just your expertise and honest feedback.</p>
       <div class="form-row" id="footer-form-row">
         <input type="email" id="footer-email" placeholder="your@email.com" aria-label="Email address" />
-        <button onclick="submitWaitlist('footer')">Join waitlist →</button>
+        <button onclick="submitWaitlist('footer')">Apply to collaborate →</button>
       </div>
       <div class="form-success" id="footer-success" style="background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.3);color:#fff;margin-top:0.5rem;">
-        ✓ You're on the list. We'll be in touch before public launch.
+        ✓ Thank you — we will be in touch before private beta opens.
       </div>
     </div>
   </section>
