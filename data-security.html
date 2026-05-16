@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Security — Markulate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1a18; --ink-2: #4a4a46; --ink-3: #8a8a84;
+      --paper: #f7f5f0; --accent: #2d5a3d; --accent-light: #e8f0eb;
+      --border: rgba(26,26,24,0.12);
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+    }
+    body { font-family:var(--font-body); background:var(--paper); color:var(--ink); line-height:1.7; -webkit-font-smoothing:antialiased; }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:1.1rem 2rem; border-bottom:1px solid var(--border); background:var(--paper); }
+    .logo { font-family:var(--font-display); font-size:1.3rem; color:var(--accent); text-decoration:none; }
+    .nav-back { font-size:0.85rem; color:var(--accent); text-decoration:none; }
+    .nav-back:hover { text-decoration:underline; }
+    main { max-width:720px; margin:0 auto; padding:4rem 2rem 6rem; }
+    h1 { font-family:var(--font-display); font-size:2.4rem; letter-spacing:-0.02em; margin-bottom:0.5rem; }
+    .last-updated { font-size:0.85rem; color:var(--ink-3); margin-bottom:3rem; }
+    h2 { font-family:var(--font-display); font-size:1.3rem; margin:2.5rem 0 0.75rem; }
+    p { font-size:0.95rem; color:var(--ink-2); margin-bottom:1rem; }
+    ul { padding-left:1.25rem; margin-bottom:1rem; }
+    ul li { font-size:0.95rem; color:var(--ink-2); margin-bottom:0.4rem; }
+    a { color:var(--accent); }
+    .notice { background:var(--accent-light); border:1px solid rgba(45,90,61,0.2); border-radius:10px; padding:1rem 1.25rem; margin-bottom:2rem; font-size:0.9rem; color:var(--accent); }
+    .security-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; margin:1.5rem 0; }
+    .security-card { background:#fff; border:1px solid var(--border); border-radius:12px; padding:1.25rem; }
+    .security-icon { font-size:1.3rem; margin-bottom:0.5rem; }
+    .security-title { font-size:0.9rem; font-weight:500; margin-bottom:0.3rem; color:var(--ink); }
+    .security-body { font-size:0.825rem; color:var(--ink-2); line-height:1.55; }
+    table { width:100%; border-collapse:collapse; margin:1.5rem 0; font-size:0.875rem; }
+    th { text-align:left; padding:0.6rem 0.75rem; background:var(--paper-2,#edeae2); color:var(--ink); font-weight:500; border:1px solid var(--border); }
+    td { padding:0.6rem 0.75rem; color:var(--ink-2); border:1px solid var(--border); vertical-align:top; }
+    footer { text-align:center; padding:1.5rem; font-size:0.8rem; color:var(--ink-3); border-top:1px solid var(--border); }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo">Markulate</a>
+  <a href="/" class="nav-back">← Back to home</a>
+</nav>
+<main>
+  <h1>Data Security</h1>
+  <p class="last-updated">Last updated: May 2025 &nbsp;·&nbsp; Effective immediately</p>
+
+  <div class="notice">
+    <strong>Plain English summary:</strong> Your data and your students' work is encrypted in transit and at rest. We store only what we need, delete it on schedule, and never share it with unauthorised parties. You can request deletion at any time.
+  </div>
+
+  <h2>Our security commitments</h2>
+  <div class="security-grid">
+    <div class="security-card">
+      <div class="security-icon">🔐</div>
+      <div class="security-title">Encrypted in transit</div>
+      <div class="security-body">All data transmitted between your browser and Markulate is encrypted using TLS 1.2 or higher (HTTPS). Unencrypted connections are rejected.</div>
+    </div>
+    <div class="security-card">
+      <div class="security-icon">🗄️</div>
+      <div class="security-title">Encrypted at rest</div>
+      <div class="security-body">All uploaded files and account data stored on our servers are encrypted at rest using AES-256 encryption.</div>
+    </div>
+    <div class="security-card">
+      <div class="security-icon">🏗️</div>
+      <div class="security-title">Secure infrastructure</div>
+      <div class="security-body">Markulate is hosted on enterprise-grade cloud infrastructure with access controls, audit logging, and regular security updates.</div>
+    </div>
+    <div class="security-card">
+      <div class="security-icon">👥</div>
+      <div class="security-title">Access controls</div>
+      <div class="security-body">Only authorised Markulate staff can access system infrastructure, and only when required for operation or support. Access is logged.</div>
+    </div>
+    <div class="security-card">
+      <div class="security-icon">🗑️</div>
+      <div class="security-title">Scheduled deletion</div>
+      <div class="security-body">Uploaded scripts are automatically deleted 90 days after processing. You can request immediate deletion at any time.</div>
+    </div>
+    <div class="security-card">
+      <div class="security-icon">📵</div>
+      <div class="security-title">No unauthorised sharing</div>
+      <div class="security-body">Your data is never sold, shared with advertisers, or disclosed to third parties except as required to operate the service under binding agreements.</div>
+    </div>
+  </div>
+
+  <h2>What data we store and for how long</h2>
+  <table>
+    <tr>
+      <th>Data type</th>
+      <th>Purpose</th>
+      <th>Retention period</th>
+    </tr>
+    <tr>
+      <td>Account information (name, email)</td>
+      <td>Account access and service communications</td>
+      <td>Duration of account, deleted on request</td>
+    </tr>
+    <tr>
+      <td>Uploaded rubrics</td>
+      <td>Generating marking suggestions</td>
+      <td>90 days after last use, or on request</td>
+    </tr>
+    <tr>
+      <td>Uploaded student scripts</td>
+      <td>Generating marking suggestions</td>
+      <td>90 days after processing, or on request</td>
+    </tr>
+    <tr>
+      <td>Marking suggestions and rationales</td>
+      <td>Audit trail and export</td>
+      <td>Duration of account, deleted on request</td>
+    </tr>
+    <tr>
+      <td>Usage logs</td>
+      <td>Service improvement and security</td>
+      <td>90 days, then anonymised</td>
+    </tr>
+  </table>
+
+  <h2>Student data handling</h2>
+  <p>We treat uploaded student work with particular care:</p>
+  <ul>
+    <li>Student scripts are processed solely to generate marking suggestions for the uploading educator</li>
+    <li>Scripts are not linked to student identity within our systems beyond what the educator provides</li>
+    <li>We recommend educators anonymise scripts where possible before uploading — replacing student names with ID numbers — to minimise identifiable data in our systems</li>
+    <li>Student work is never used for AI model training, analytics, research, or any purpose beyond the marking task</li>
+    <li>Scripts are automatically deleted after 90 days and can be deleted immediately on request</li>
+  </ul>
+
+  <h2>Requesting data deletion</h2>
+  <p>You can request deletion of your account, uploaded files, or any specific data at any time by emailing <a href="mailto:hello@markulate.com">hello@markulate.com</a> with the subject line "Data Deletion Request." We will confirm deletion within 10 business days.</p>
+
+  <h2>Institutional and compliance enquiries</h2>
+  <p>If your school or university requires a Data Processing Agreement (DPA), security questionnaire, or additional compliance documentation before approving Markulate for institutional use, please contact us at <a href="mailto:hello@markulate.com">hello@markulate.com</a>. We will work with your IT or legal team to provide what you need.</p>
+
+  <h2>Reporting a security concern</h2>
+  <p>If you believe you have identified a security vulnerability in Markulate, please report it responsibly to <a href="mailto:hello@markulate.com">hello@markulate.com</a> with the subject line "Security Report." We will acknowledge your report within 48 hours and work to resolve confirmed issues promptly.</p>
+
+  <h2>Questions</h2>
+  <p>For any questions about data security, email <a href="mailto:hello@markulate.com">hello@markulate.com</a>. We respond within 5 business days.</p>
+</main>
+<footer>
+  © 2025 Markulate &nbsp;·&nbsp;
+  <a href="/privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="/terms.html">Terms of Use</a> &nbsp;·&nbsp;
+  <a href="/ai-policy.html">AI Use Policy</a> &nbsp;·&nbsp;
+  <a href="/data-security.html">Data Security</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Use Policy — Markulate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1a1a18; --ink-2: #4a4a46; --ink-3: #8a8a84;
+      --paper: #f7f5f0; --accent: #2d5a3d; --accent-light: #e8f0eb;
+      --border: rgba(26,26,24,0.12);
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+    }
+    body { font-family:var(--font-body); background:var(--paper); color:var(--ink); line-height:1.7; -webkit-font-smoothing:antialiased; }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:1.1rem 2rem; border-bottom:1px solid var(--border); background:var(--paper); }
+    .logo { font-family:var(--font-display); font-size:1.3rem; color:var(--accent); text-decoration:none; }
+    .nav-back { font-size:0.85rem; color:var(--accent); text-decoration:none; }
+    .nav-back:hover { text-decoration:underline; }
+    main { max-width:720px; margin:0 auto; padding:4rem 2rem 6rem; }
+    h1 { font-family:var(--font-display); font-size:2.4rem; letter-spacing:-0.02em; margin-bottom:0.5rem; }
+    .last-updated { font-size:0.85rem; color:var(--ink-3); margin-bottom:3rem; }
+    h2 { font-family:var(--font-display); font-size:1.3rem; margin:2.5rem 0 0.75rem; }
+    p { font-size:0.95rem; color:var(--ink-2); margin-bottom:1rem; }
+    ul { padding-left:1.25rem; margin-bottom:1rem; }
+    ul li { font-size:0.95rem; color:var(--ink-2); margin-bottom:0.4rem; }
+    a { color:var(--accent); }
+    .notice { background:var(--accent-light); border:1px solid rgba(45,90,61,0.2); border-radius:10px; padding:1rem 1.25rem; margin-bottom:2rem; font-size:0.9rem; color:var(--accent); }
+    .commit-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; margin:1.5rem 0; }
+    .commit-card { background:#fff; border:1px solid var(--border); border-radius:12px; padding:1.25rem; }
+    .commit-icon { font-size:1.3rem; margin-bottom:0.5rem; }
+    .commit-title { font-size:0.9rem; font-weight:500; margin-bottom:0.3rem; color:var(--ink); }
+    .commit-body { font-size:0.825rem; color:var(--ink-2); line-height:1.55; }
+    footer { text-align:center; padding:1.5rem; font-size:0.8rem; color:var(--ink-3); border-top:1px solid var(--border); }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo">Markulate</a>
+  <a href="/" class="nav-back">← Back to home</a>
+</nav>
+<main>
+  <h1>AI Use Policy</h1>
+  <p class="last-updated">Last updated: May 2025 &nbsp;·&nbsp; Effective immediately</p>
+
+  <div class="notice">
+    <strong>Plain English summary:</strong> Markulate uses AI to generate marking suggestions based on your rubric. The AI assists — it never decides. Your uploaded content is never used to train AI models. You stay in control at every step.
+  </div>
+
+  <h2>What Markulate's AI does</h2>
+  <p>Markulate uses large language model (LLM) AI technology to analyse student written responses against the rubric criteria you provide. For each submission, the AI generates a suggested mark and a written rationale explaining how the response maps to each rubric criterion.</p>
+  <p>These are suggestions — not decisions. Every suggestion must be reviewed and approved by the educator before it becomes a mark.</p>
+
+  <h2>What Markulate's AI does not do</h2>
+  <ul>
+    <li><strong>It does not issue final grades.</strong> No mark is recorded without educator review and approval.</li>
+    <li><strong>It does not learn from your content.</strong> Student scripts and rubrics you upload are not used to train, fine-tune, or improve any AI model — ours or our providers'.</li>
+    <li><strong>It does not make autonomous decisions.</strong> The AI is a first-pass tool. The educator is the decision-maker.</li>
+    <li><strong>It does not flag or report students.</strong> Markulate does not perform plagiarism detection, academic misconduct identification, or any form of student surveillance.</li>
+    <li><strong>It does not retain content for AI purposes.</strong> Uploaded content is processed and then handled according to our data retention policy. It is not stored in AI systems.</li>
+  </ul>
+
+  <h2>Our AI commitments</h2>
+  <div class="commit-grid">
+    <div class="commit-card">
+      <div class="commit-icon">🧑‍🏫</div>
+      <div class="commit-title">Human in the loop</div>
+      <div class="commit-body">Every marking suggestion requires educator review before it is applied. The teacher approves. The AI assists.</div>
+    </div>
+    <div class="commit-card">
+      <div class="commit-icon">📖</div>
+      <div class="commit-title">Explainable outputs</div>
+      <div class="commit-body">Every suggested mark comes with a written rationale tied to your rubric criteria. No black boxes.</div>
+    </div>
+    <div class="commit-card">
+      <div class="commit-icon">🚫</div>
+      <div class="commit-title">No training on your data</div>
+      <div class="commit-body">Your rubrics and student work are never used to train AI models. Processing is one-directional.</div>
+    </div>
+    <div class="commit-card">
+      <div class="commit-icon">⚖️</div>
+      <div class="commit-title">Fairness awareness</div>
+      <div class="commit-body">We acknowledge AI systems can reflect biases. We are actively working to identify and mitigate bias in marking suggestions.</div>
+    </div>
+  </div>
+
+  <h2>AI model providers</h2>
+  <p>Markulate uses third-party AI infrastructure to process submissions. Our providers are bound by data processing agreements that prohibit them from using your content for model training or any purpose beyond processing your specific request. We will update this page if our AI provider changes.</p>
+
+  <h2>Known limitations of AI marking</h2>
+  <p>We believe in being honest about what AI can and cannot do reliably:</p>
+  <ul>
+    <li>AI marking suggestions may not always capture nuance, creativity, or context the way an experienced educator would</li>
+    <li>Highly subjective or discipline-specific rubric criteria may produce less consistent suggestions</li>
+    <li>AI performance may vary across different writing styles, languages, and subject areas</li>
+    <li>Suggestions should always be treated as a starting point, not a final answer</li>
+  </ul>
+  <p>This is precisely why educator review is built into every step of the Markulate workflow — not as a formality, but as a genuine safeguard.</p>
+
+  <h2>Institutional guidance</h2>
+  <p>We recommend that educators check their institution's policy on the use of AI tools with student work before using Markulate. If your institution requires a Data Processing Agreement or security review, please contact us at <a href="mailto:hello@markulate.com">hello@markulate.com</a> and we will work with you to provide the documentation you need.</p>
+
+  <h2>Questions</h2>
+  <p>If you have questions about how Markulate uses AI, email us at <a href="mailto:hello@markulate.com">hello@markulate.com</a>. We will respond within 5 business days.</p>
+</main>
+<footer>
+  © 2025 Markulate &nbsp;·&nbsp;
+  <a href="/privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="/terms.html">Terms of Use</a> &nbsp;·&nbsp;
+  <a href="/ai-policy.html">AI Use Policy</a> &nbsp;·&nbsp;
+  <a href="/data-security.html">Data Security</a>
+</footer>
+</body>
+</html>
